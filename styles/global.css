@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --col-white: #ECECEC;
+    --col-l-grey: #B1C7CA;
+    --col-brown: #662900;
+    --col-orange: #E08E45;
+    --col-khaki: #F0E68C;
+    --col-d-grey: #3B3E42;
+    --col-black: #2A2929;
+
+    --font-primary: "Josefin Sans", sans-serif;
+    --font-secondary: "Anton SC", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    /* min-height: 100vh; */
+    min-width: 360px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--col-black);
+    background-color: var(--col-l-grey);
+    font-size: 16px;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* 
+header::before {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.15) 25%, rgba(255,255,255,0.3) 100%);
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    min-width:100vw;
+    background-color: var(--col-brown);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    user-select: none;
+    border-bottom: 2px solid var(--col-khaki);
+} */
+
+header {
+    min-width: 100vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.15) 25%, rgba(255, 255, 255, 0.3) 100%), var(--col-brown);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    user-select: none;
+    border-bottom: 2px solid var(--col-khaki);
+}
+
+h1, h2 {
+    font-family: var(--font-secondary);
+}
+
+h1 {
+    letter-spacing: 0.2rem;
+    color: var(--col-orange);
+    -webkit-text-stroke: 1px var(--col-khaki);
+    transition: all 0.1s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.075);
+    -webkit-text-stroke-color: var(--col-white);
+}
+
+h1:active {
+    transform: scale(1.075);
+}
+
+h1[id="h1-short"] {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav-text {
+    display: inline;
+    color: var(--col-khaki);
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+    font-family: var(--font-secondary);
+}
+
+.nav-text:hover {
+    transform: scale(1.075);
+    color: var(--col-white);
+    text-shadow: 0 0 5px var(--col-black);
+}
+.nav-icon {
+    display: none;
+}
+
+
+.icon {
+   color: var(--col-khaki);
+   font-size: 2rem; 
+}
+
+main {
+    height: 100%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    margin-top: 4rem; 
+    position: sticky;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--col-d-grey);
+    color: var(--col-white);
+}
+a.footer-item {
+    transition: all 0.1s ease-in-out;
+}
+a.footer-item:hover {
+    color: var(--col-khaki);
+}
+
+@media screen and (max-width: 768px) {
+    h1 { font-size: 1.5rem; }
+    /* nav { gap: 2rem; } */
+    .nav-text { display: none; }
+    .nav-icon { display: inline; }
+}
+
+@media screen and (max-width: 590px) {
+    nav {gap: 1.5rem;}
+    .icon { font-size: 1.8rem; }
+}
+
+@media screen and (max-width: 509px) {
+    nav { gap: 1rem; }
+    main { padding: 0 2.5rem; }
+}
+
+@media screen and (max-width: 480px) {
+    main { padding: 0 1rem; }
+    nav { gap: 1.5rem; }
+    h1[id="h1-short"] { display: inline; }
+    h1[id="h1-long"] { display: none; }
+}
+
+@media screen and (max-width: 450px) {
+    nav { gap: 1.3rem; }
+    .icon { font-size: 1.3rem; }
+}
+
+@media screen and (max-width: 384px) {
+    main { padding: 0 0.5 rem; }
+    nav { gap: 1rem; }
+}
+
