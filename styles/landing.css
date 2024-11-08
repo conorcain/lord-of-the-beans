@@ -68,17 +68,22 @@ img.coffee {
 
     .testimonials {
         flex-direction: column;
+        width: 60%;
+        /* gap: 2rem; */
     }
 
     .review {
         border-right: none;
         border-bottom: 2px solid var(--col-brown-alpha15);
-        padding: 0.5rem;
-        width: 80%;
+        /* margin-bottom: 2rem; */
+        padding: 0.5rem 0 0.5rem 0;
+        width: 100%;
     }
 
     .review:last-child {
         border-bottom: none;
+        /* margin-bottom: none; */
+        padding: 0.5rem 0 0 0;
     }
 }
 
@@ -92,9 +97,10 @@ img.coffee {
 }
 
 @media screen and (max-width: 509px){
-    .image-wrapper, .text-wrapper {
-        opacity: 1;
+    .review {
+        font-size: 14px;
     }
+
 }
 
 @media screen and (max-width: 383px) {
