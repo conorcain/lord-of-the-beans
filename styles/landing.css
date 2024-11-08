@@ -38,7 +38,6 @@ img.coffee {
 .testimonials {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 2rem;
@@ -65,6 +64,21 @@ img.coffee {
 @media screen and (max-width: 1024px){
     .image-wrapper, .text-wrapper {
         width: 80%;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .review {
+        border-right: none;
+        border-bottom: 2px solid var(--col-brown-alpha15);
+        padding: 0.5rem;
+        width: 80%;
+    }
+
+    .review:last-child {
+        border-bottom: none;
     }
 }
 
