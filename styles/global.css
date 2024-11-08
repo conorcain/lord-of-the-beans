@@ -9,6 +9,9 @@
     --col-d-grey: #3B3E42;
     --col-black: #2A2929;
 
+    --col-brown-alpha15: rgba(102, 41, 0, 0.15);
+
+
     --font-primary: "Josefin Sans", sans-serif;
     --font-secondary: "Anton SC", sans-serif;
 }
@@ -148,7 +151,7 @@ nav {
 }
 
 main {
-    height: 100%;
+    /* height: 100%; */
     padding: 0 5rem;
     display: flex;
     flex-direction: column;

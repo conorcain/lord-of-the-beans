@@ -4,7 +4,7 @@ main {
     gap: 2rem;
 }
 
-.image-wrapper, .text-wrapper {
+.image-wrapper, .text-wrapper, .testimonials {
     width: 50%;
 }
 
@@ -35,6 +35,33 @@ img.coffee {
     color: var(--col-brown);
 }
 
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--col-brown-alpha15);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.review {
+    flex: 1 1 30%;
+    /* flex: 1; */
+    border-right: 2px solid var(--col-brown-alpha15);
+}
+
+.review:last-child {
+    border: none;
+}
+
+.rating {
+    color: var(--col-khaki);
+    -webkit-text-stroke: 1px var(--col-brown);
+}
+
 @media screen and (max-width: 1024px){
     .image-wrapper, .text-wrapper {
         width: 80%;
@@ -44,6 +71,9 @@ img.coffee {
 @media screen and (max-width: 768px){
     .image-wrapper, .text-wrapper {
         width: 100%;
+    }
+    .item-wrapper {
+        flex-direction: column;
     }
 }
 
