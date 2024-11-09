@@ -159,6 +159,10 @@ h3.testimonials-title.bottom {
         flex-direction: column;
     }
 
+    .location-card {
+        flex-direction: column;
+    }
+
     .review {
         border-right: none;
         border-bottom: 2px solid var(--col-brown-alpha15);

@@ -65,7 +65,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .container {
+    .menus-container {
+        width: 100%;
+    }
+
+    .drinks-text, .drinks-items {
         width: 100%;
     }
 
