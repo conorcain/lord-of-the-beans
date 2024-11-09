@@ -1,7 +1,9 @@
-main {
+.landing-container {
     display: flex;
     flex-direction: column;
-    gap: var(--val-root-content-gap);
+    justify-content: center;
+    align-items: center;
+    gap: var(--val-main-content-gap);
 }
 
 h3 {
@@ -11,6 +13,7 @@ h3 {
 .image-wrapper, .text-wrapper, .sec-testimonials {
     width: 50%;
 }
+
 
 img.coffee {
     /* width: 300px;

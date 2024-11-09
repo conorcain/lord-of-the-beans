@@ -24,6 +24,7 @@
     --val-base-font-size: 16px;
     --val-base-main-padding: 0 5rem;
     --val-main-content-gap: 2.5rem; 
+    --val-default-container-width: 80%;
 
     --val-header-height: 15%;
     --val-header-footer-margin: 4rem;

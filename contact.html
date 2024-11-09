@@ -1,1 +1,74 @@
-the contact link was just a placeholder lol sorry. this page is only here so you dont 404, for now <a href="/index.html">click here</a> to go back
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord of the Beans | Contact</title>
+
+    <link rel="shortcut icon" href="media/images/icon2-1.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+</head>
+<body>
+    <header>
+        <h1 id="h1-long"><a href="/index.html" target="_self">Lord of the Beans</a></h1>
+        <h1 id="h1-short"><a href="/index.html" target="_self">Lord Beans</a></h1>
+        <nav>
+            <a class="nav-text" href="/drinks.html" target="_self">Drinks</a>
+            <a class="nav-text" href="/pastries.html" target="_self">Pastries</a>
+            <a class="nav-text" href="/about.html" target="_self">About</a>
+            <a class="nav-text" href="/contact.html" target="_self">Contact</a>
+
+            <a class="nav-icon" href="/drinks.html"><i class="fa-solid fa-mug-hot icon"></i></a>
+            <a class="nav-icon" href="/pastries.html"><i class="fa-solid fa-bread-slice icon"></i></a>
+            <a class="nav-icon" href="/about.html"><i class="fa-solid fa-circle-info icon"></i></a>
+            <a class="nav-icon" href="/contact.html"><i class="fa-solid fa-envelope icon"></i></a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <form class="contact-form">
+                <fieldset>
+                  <legend>Contact Details</legend>
+              
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="phone">Phone (Optional):</label>
+                  <input type="tel" id="phone" name="phone">
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="10" required></textarea>
+                </fieldset>
+              
+                <fieldset>
+                  <legend>We gotta ask</legend>
+              
+                  <label>
+                    <input type="checkbox" name="data-consent" required>
+                    I consent to the storage & processing of my data in accordance with the privacy policy.
+                  </label>
+              
+                  <label>
+                    <input type="checkbox" name="marketing-consent">
+                    I would like to receive updates and offers via email.
+                  </label>
+                </fieldset>
+              
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a class="footer-item" href="https://facebook.com" target="_blank">Facebook</a>
+        <a class="footer-item" href="https://twitter.com" target="_blank">Twitter</a>
+        <a class="footer-item" href="https://instagram.com" target="_blank">Instagram</a>
+        <a class="footer-item" href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.contact-container {
+    width: var(--val-default-container-width);
+}
+.contact-form.card-style {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--col-p-coffee);  /* Soft background */
+    border: 2px solid var(--col-brown-alpha50);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px var(--col-brown-alpha15);
+  }
+  
+  fieldset {
+    border: 2px solid var(--col-brown-alpha15);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)), var(--col-khaki-alpha50);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  legend {
+    color: var(--col-brown);
+    background-color: var(--col-khaki);  /* Light background for legend */
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid var(--col-brown-alpha50);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--col-d-grey);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--col-p-coffee);
+    border-radius: 5px;
+    background-color: var(--col-white);  /* Subtle background colour */
+    font-family: var(--font-primary);
+    color: var(--col-black);
+    font-size: var(--val-base-font-size);
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none;
+  }
+  
+  button {
+    width: 40%;
+    padding: 1rem;
+    background-color: var(--col-brown-alpha50);
+    color: var(--col-p-coffee);
+    border: 3px solid var(--col-brown-alpha60);
+    border-radius: 5px;
+    font-family: var(--font-primary);
+    font-size: var(--val-base-font-size);
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  button:hover {
+    background-color: var(--col-brown);
+    border: 3px solid var(--col-khaki);
+    cursor: pointer;
+    transform: scale(1.15);
+    color: var(--col-white);
+  }
